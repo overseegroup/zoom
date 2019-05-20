@@ -68,7 +68,7 @@ class Request
     {
         $token = [
             'iss' => $this->apiKey,
-            'exp' => time() + 60,
+            'exp' => time() + 600000,
         ];
 
         return JWT::encode($token, $this->apiSecret);
