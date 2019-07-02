@@ -205,5 +205,19 @@ class Users extends Request
     }
 
 
+     /**
+     * Get Webinar Registrants
+     *
+     * @param string $userId
+     * @param array $optional
+     * @return array|mixed
+     */
+    public function getWebinarAttendance(string $webinarId, $optional = [])
+    {
+        return $this->get("reports/webinars/{$webinarId}/participants", $optional);
+    }
+
+
+
 
 }
