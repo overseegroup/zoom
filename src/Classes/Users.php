@@ -214,8 +214,10 @@ class Users extends Request
      */
     public function getWebinarAttendance(string $webinarId, $optional = [])
     {
-        return $this->get("reports/webinars/{$webinarId}/participants", $optional);
+        return $this->get("report/webinars/{$webinarId}/participants", $optional);
     }
+
+    
 
 
 
