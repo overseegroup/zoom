@@ -7,7 +7,7 @@
 From the command line, run:
 
 ```
-composer require oversee/zoom
+composer require overseegroup/zoom
 ```
 
 ### Step 2: Service Provider (For Laravel < 5.5)
